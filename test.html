@@ -1,0 +1,53 @@
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>点击文字弹出一个DIV层窗口代码</title> 
+        <style> 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 55%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
+    </style> 
+    </head> 
+    <body> 
+        <p>示例弹出层：<a href = "JavaScript:void(0)" onclick = "openDialog()">请点这里</a></p> 
+        <div id="light" class="white_content">
+            <table>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+            </table> 
+            <a href = "javascript:void(0)" onclick = "closeDialog()">点这里关闭本窗口</a>
+        </div> 
+        <div id="fade" class="black_overlay"></div> 
+    </body> 
+    <script type="text/javascript">
+        function openDialog(){
+            document.getElementById('light').style.display='block';
+        }
+        function closeDialog(){
+            document.getElementById('light').style.display='none';
+        }
+    </script>
+</html>
+————————————————
+版权声明：本文为CSDN博主「君末」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_37472811/article/details/117946271

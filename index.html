@@ -11,12 +11,21 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
     <link rel="icon" type="image/x-icon" href="./img/title.png" />
     
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
 
-    
-
-<link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .scrollBody{height: 160px;position: relative;overflow: hidden;}
+            .scrollBody>ul{list-style: none;position: absolute;height: 40px;width: 100%;top: 160px;left: 0px;}
+            .scrollBody>ul:nth-child(odd){background: #fff;}
+            .scrollBody>ul:nth-child(even) {background: #fff;}
+            .scrollBody>ul>li{height: 40px;width: 50%;float: left;text-align: center;line-height: 40px;}
+            .scrollBody>ul:nth-child(1){top: 0;}
+            .scrollBody>ul:nth-child(2){top: 40px;}
+            .scrollBody>ul:nth-child(3){top: 80px;}
+            .scrollBody>ul:nth-child(4){top: 120px;}
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -76,8 +85,13 @@
     <link href="./css/blog.css" rel="stylesheet">
   </head>
   <body>
-    
+
+
+
+<!-- Head Container -->
 <div class="container">
+
+  <!-- Header -->
   <header class="blog-header lh-1 py-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
       <div class="col-4 pt-1">
@@ -102,7 +116,9 @@
       </div>
     </div>
   </header>
+  <!-- Header -->
 
+  <!-- TabBar -->
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
       <a class="p-2 " href="#" style="font-weight: 900; color: #171c61;">首页</a>
@@ -120,10 +136,32 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
       </a>
     </nav>
+  </div>  
+  <!-- TabBar -->
+
+</div>
+<!-- Head Container -->
+
+
+
+<!-- 悬浮窗口 在线客服 -->
+<div style="position: fixed; left: 1vw; top: 30vh; width: 10vw; height: 12vw; border:solid #171c61  1vh;">
+  <div style="display: flex; height:2vw; background-color: #171c61;">
+    <img src="./img/kefu.png" style="height: 90%; margin: 1%;" alt="">
+    <span style="margin-left: 1vw; color: #fff;height: 2vw; line-height: 2vw;text-align: center;">在线客服</span>
+  </div>
+  <div>
+    <img src="./img/wechat.jpg" style="margin: 0.5vw; width: 8vw;" >
   </div>
 </div>
+<!-- 悬浮窗口 在线客服 -->
 
+
+
+<!-- Main Container -->
 <main class="container">
+
+  <!-- 主框 -->
   <div class="p-4 p-md-5 mb-4 rounded /*text-bg-dark/" style="background-color: #fff;color: #171c61 !important; border: solid #171c61 0.5vmin; background-image:url('./img/mel.png'); background-size:40%; background-repeat:no-repeat; background-position:right bottom;">
     <div class="/*col-md-68? px-0" style="flex: 0 0 auto; width: 70%;">
       <h1 class="/*display-4 fst-italic*/" style="font-family:'Courier New', Courier, monospace; font-size:7.4vmin; font-weight: 900;">安信留学移民 · AuEase </h1>
@@ -131,7 +169,9 @@
       <p class="lead mb-0"><a href="#" class=" fw-bold" style="color: #171c61;">了解更多...</a></p>
     </div>
   </div>
+  <!-- 主框 -->
 
+  <!-- 副框 -->
   <div class="row mb-2">
     <div style="flex: 0 0 auto; width: 32%; margin-right: 2%;">
       <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative" style="border: #171c61 0.5vmin  var(--bs-border-style)  !important;">
@@ -184,208 +224,232 @@
       </div>
     </div> -->
   </div>
+  <!-- 副框 -->
 
+  <!-- 下方细节框 -->
   <div class="row g-5">
+
+    <!-- 左侧栏 -->
     <div class="col-md-8">
 
-
+      <!-- 服务介绍 -->
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+      </h3>
+      <article style="margin-bottom: 1rem;">
+        <h2 class="blog-post-title" style="margin-bottom: 1.5rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">服务介绍</h2>
+      <!-- 细节框1 -->
+        <div style="display: flex;">
+          <div style="flex: 0 0 auto; width: 47%; margin-right: 6%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">技术移民</h3>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <p class="card-text mb-auto">申请人通过技术职业评估，并且在年龄、学历、工作经验英语等方面达60分。</p>
+                <a href="#" class="stretched-link">点击了解</a>
+              </div>
+              <div class="col-auto d-none d-lg-block" style="align-items: center;   justify-content: center; ">
+                <img src="./img/jishu.png" style="margin-top: 1.25vw; margin-right: 1vw;">
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0 0 auto; width: 47%; ">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">雇主担保</h3>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <p class="card-text mb-auto">申请人可持有工作签证在雇主公司某一特定职位工作，符合条件后可转为永居。</p>
+                <a href="#" class="stretched-link">点击了解</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">                
+                <img src="./img/bao.png" style="margin-top: 1.25vw; margin-right: 1vw;"></div>
+            </div>
+          </div>
+        </div>
+      <!-- 细节框1 -->
+      <!-- 细节框2 -->
+        <div style="display: flex;">
+          <div style="flex: 0 0 auto; width: 47%; margin-right: 6%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">家庭移民</h3>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <p class="card-text mb-auto">永居或者居民的家庭成员可移居澳洲，如配偶移民、父母移民、子女移民等等。</p>
+                <a href="#" class="stretched-link">点击了解</a>
+              </div>
+              <div class="col-auto d-none d-lg-block" style="align-items: center;   justify-content: center; ">
+                <img src="./img/jia.png" style="margin-top: 1.25vw; margin-right: 1vw;">
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0 0 auto; width: 47%; ">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">留学签证</h3>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <p class="card-text mb-auto">申请人可以申请学生签证在澳洲读书，如入读初中、高中、大学、研究生等等。</p>
+                <a href="#" class="stretched-link">点击了解</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">                
+                <img src="./img/xue.png" style="margin-top: 1.25vw; margin-right: 1vw;"></div>
+            </div>
+          </div>
+        </div>
+      <!-- 细节框2 -->
+      <!-- 细节框3 -->
       <div style="display: flex;">
-        <div style="flex: 0 0 auto; width: 45%; margin-right: 5%;">
+        <div style="flex: 0 0 auto; width: 47%; margin-right: 6%;">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
-              <h3 class="mb-0" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #6c757d;">资料专区</h3>
-              <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">安信客户移民资料下载专区</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">投资移民</h3>
+              <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+              <p class="card-text mb-auto">有成功经商背景的申请人通过在澳对各种项目的投资，符合要求后可获得永居。</p>
+              <a href="#" class="stretched-link">点击了解</a>
             </div>
-            <div class="col-auto d-none d-lg-block">
-              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+            <div class="col-auto d-none d-lg-block" style="align-items: center;   justify-content: center; ">
+              <img src="./img/tou.png" style="margin-top: 1.25vw; margin-right: 1vw;">
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div style="flex: 0 0 auto; width: 47%; ">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
-              <h3 class="mb-0">Post title</h3>
-              <div class="mb-1 text-muted">Nov 11</div>
-              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+              <h3 class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2px;">其他签证</h3>
+              <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+              <p class="card-text mb-auto">澳洲的签证还包括旅游签证、打工度假、难民签证、居民往返、MRT上诉等等。</p>
+              <a href="#" class="stretched-link">点击了解</a>
             </div>
-            <div class="col-auto d-none d-lg-block">
-              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-            </div>
+            <div class="col-auto d-none d-lg-block">                
+              <img src="./img/qian.png" style="margin-top: 1.25vw; margin-right: 1vw;"></div>
           </div>
         </div>
       </div>
+      <!-- 细节框3 -->
+      </article>
 
-
+      <!-- 公司简介 -->
       <h3 class="pb-4 mb-4 fst-italic border-bottom">
-        From the Firehose
       </h3>
-
       <article class="blog-post">
-        <h2 class="blog-post-title mb-1">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2021 by <a>Mark</a></p>
-
-        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-        <hr>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h2>Blockquotes</h2>
-        <p>This is an example blockquote in action:</p>
-        <blockquote class="blockquote">
-          <p>Quoted text goes here.</p>
-        </blockquote>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Example lists</h3>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-        <ul>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
-        </ul>
-        <p>And this is an ordered list:</p>
-        <ol>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
-        </ol>
-        <p>And this is a definition list:</p>
-        <dl>
-          <dt>HyperText Markup Language (HTML)</dt>
-          <dd>The language used to describe and define the content of a Web page</dd>
-          <dt>Cascading Style Sheets (CSS)</dt>
-          <dd>Used to describe the appearance of Web content</dd>
-          <dt>JavaScript (JS)</dt>
-          <dd>The programming language used to build advanced Web sites and applications</dd>
-        </dl>
-        <h2>Inline HTML elements</h2>
-        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-        <ul>
-          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-          <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-        </ul>
-        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-        <h2>Heading</h2>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Sub-heading</h3>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <pre><code>Example code block</code></pre>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+        <h2 class="blog-post-title" style="margin-bottom: 1.5rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">公司简介</h2>
+        
+        <p>安信留学移民 AuEase Group是一家成立于墨尔本的专业留学移民咨询公司，专注澳洲留学移民。公司团队包括资深持牌移民律师及多位在澳多年、经验丰富的留学移民顾问。安其学而亲其师，乐其友而信其道。安信是一支有责任感的团队。</p>
+        <p>我们公司为大家提供最专业诚信的留学移民签证及留学移民类相关服务。我们将一直秉承最初的信仰，在留学移民的道路上为大家服务。澳大利亚墨尔本安信留学移民————您身边最值得信赖的墨尔本留移民中介公司。</p>
+        <p>澳大利亚墨尔本留学服务类 —— 出国深造升学转学学生签证; PSW工作签证PY职业年; NAATI课程等;</p>
+        <p>澳大利亚墨尔本移民服务类 —— 技术移民类签证; 主担保类签证; 商业投资类签证; 家庭移民类签证;配偶移民类签证等;</p>
+        <p>澳大利亚墨尔本移民中介 澳大利亚墨尔本留学中介; 澳大利亚墨尔本留学移民中介; 澳大利亚墨尔本留学移民中介公司; 澳大利亚墨尔本技术移民中介公司; 澳大利亚墨尔本家庭移民中介公司; 澳大利亚墨尔本配偶移民中介公司; 澳大利亚墨尔本雇主担保中介公司; 澳大利亚墨尔本商业投资移民中介公司; 墨尔本PY职业年; 墨尔本NAATI课程;</p>
+        <p>墨尔本安信留学移民中介公司拥有澳大利亚注册移民代理的资质,我们在澳利亚移民代理注册管理局(MARA) 拥有注册号码.Code of Conduct 移民代理行为准则: <a href="https://www.mara.gov.au/becoming-an-agent/professional-standards-and-obligations/code-of-conduct/">https://www.mara.gov.au/becoming-an-agent/professional-standards-and-obligations/code-of-conduct/</a></p>
+        <p>澳大利亚驻华大使馆建议您适用向MARA办公室注册的移民代理: <a href="www.china.embassy.gov.au/bjngchinese/dimacn13.html">www.china.embassy.gov.au/bjngchinese/dimacn13.html</a></p>
+        
       </article>
 
-      <article class="blog-post">
-        <h2 class="blog-post-title mb-1">Another blog post</h2>
-        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
-
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <blockquote>
-          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-        </blockquote>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Example table</h3>
-        <p>And don't forget about tables in these posts:</p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Upvotes</th>
-              <th>Downvotes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alice</td>
-              <td>10</td>
-              <td>11</td>
-            </tr>
-            <tr>
-              <td>Bob</td>
-              <td>4</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Charlie</td>
-              <td>7</td>
-              <td>9</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Totals</td>
-              <td>21</td>
-              <td>23</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-      </article>
-
-      <article class="blog-post">
-        <h2 class="blog-post-title mb-1">New feature</h2>
-        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <ul>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
-        </ul>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-      </article>
-
+      <!-- 返回顶部 -->
       <nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-        <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+        <a class="btn  rounded-pill" href="#" style="background-color: #30379c; color: #fff;">回到顶部</a>
       </nav>
+      <!-- 返回顶部 -->
 
     </div>
+    <!-- 左侧栏 -->
 
+    <!-- 右侧栏 -->
     <div class="col-md-4">
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+          <h4 class="fst-italic" style="font-weight: 900;">获签公告</h4>
+          <div class="scrollBody">
+            <ul><li>恭喜张*女士</li><li>配偶签证下签成功！</li></ul>
+            <ul><li>恭喜林**先生</li><li>配偶签证下签成功！</li></ul>
+            <ul><li>恭喜曾*先生</li><li>子女签证下签成功！</li></ul>
+            <ul><li>恭喜刘**先生</li><li>子女签证下签成功！</li></ul>
+            <ul><li>恭喜欧阳**先生</li><li>学生签证下签成功！</li></ul>
+            <ul><li>恭喜陈**女士</li><li>父母移民下签成功！</li></ul>
+            <ul><li>恭喜宋**先生</li><li>父母移民下签成功！</li></ul>
+            <ul><li>恭喜陈*女士</li><li>父母移民下签成功！</li></ul>
+        </div>
+        <script>
+            function scroll(className){
+                var uls = $("."+className+">ul");
+                var interval = 1200;
+                var rowHeight = 40;
+                var curIndex=0;
+                function  playScroll() {
+                    for(var i=0;i<uls.length;i++){
+                        if(i<curIndex){
+                            uls.eq(i).stop(true).animate({top:(i-curIndex-1+uls.length)*rowHeight+'px'});
+                        }else if(i>curIndex){
+                            uls.eq(i).stop(true).animate({top:(i-curIndex-1)*rowHeight+'px'});
+                        }else{
+                            uls.eq(i).stop(true).animate({top: -rowHeight},function(){
+                                $(this).css({top:(uls.length-1)*rowHeight+'px'});
+                            });
+                        }
+                    }
+                    if(curIndex==uls.length-1){
+                        curIndex=0
+                    }else{
+                        curIndex++
+                    }
+                }
+                timer = setInterval(playScroll,interval);
+                $('.'+className).mouseenter(function () {
+                    clearInterval(timer);
+                }).mouseleave(function () {
+                    timer = setInterval(playScroll,interval);
+                });
+            }
+            scroll('scrollBody')
+        </script>
         </div>
 
-        <div class="p-4">
-          <h4 class="fst-italic">Archives</h4>
+        <div style="padding-left: 1.5rem; padding-top: 0.8rem; padding-bottom: 0.8rem; padding-right: 1.5rem;">
+          <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">澳洲移民动态</h4>
           <ol class="list-unstyled mb-0">
-            <li><a href="#">March 2021</a></li>
-            <li><a href="#">February 2021</a></li>
-            <li><a href="#">January 2021</a></li>
-            <li><a href="#">December 2020</a></li>
-            <li><a href="#">November 2020</a></li>
-            <li><a href="#">October 2020</a></li>
-            <li><a href="#">September 2020</a></li>
-            <li><a href="#">August 2020</a></li>
-            <li><a href="#">July 2020</a></li>
-            <li><a href="#">June 2020</a></li>
-            <li><a href="#">May 2020</a></li>
-            <li><a href="#">April 2020</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 澳洲配偶移民深度精品总结</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 今天开始，澳洲配偶移民在...</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 圣诞来临：移民局公共假期...</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 最新澳大利亚对于父母移民...</a></li>
+            <li><a href="#" style="color: #000;">更多内容...</a></li>
           </ol>
         </div>
 
-        <div class="p-4">
-          <h4 class="fst-italic">Elsewhere</h4>
+        <div style="padding-left: 1.5rem; padding-top: 0.8rem; padding-bottom: 0.8rem; padding-right: 1.5rem;">
+          <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">澳洲移民生活</h4>
+          <ol class="list-unstyled mb-0">
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 大数据: 如果您正在申请签证...</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 必读: 母办十年旅游签? 本文...</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 成功不是偶然，做好DECISI...</a></li>
+            <li style=" margin-bottom: 0.8rem;"><a href="#" style="color: #000;">【安信留学移民】 澳大利亚配偶移民拒签理由...</a></li>
+            <li><a href="#" style="color: #000;">更多内容...</a></li>
+          </ol>
+        </div>
+
+        <div style="padding-left: 1.5rem; padding-top: 0.8rem; padding-bottom: 0.8rem; padding-right: 1.5rem;">
+          <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">关注我们</h4>
           <ol class="list-unstyled">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><img src="./img/ins.png" style="height:2vh; margin-right: 1vw;" alt=""><a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #000; margin-bottom: 0.8rem;">Instagram</a></li>
+            <li><img src="./img/twitter.png" style="height:2vh; margin-right: 1vw;" alt=""><a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #000; margin-bottom: 0.8rem;">Twitter</a></li>
+            <li><img src="./img/facebook.png" style="height:2vh; margin-right: 1vw;" alt=""><a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #000; margin-bottom: 0.8rem;">Facebook</a></li>
           </ol>
         </div>
       </div>
     </div>
+    <!-- 右侧栏 -->
+
   </div>
+  <!-- 下方细节框 -->
 
 </main>
+<!-- Main Container -->
 
+
+
+<!-- Footer -->
 <footer class="" style="padding: 2.5rem 0;color: #fff;text-align: center;background-color: #171c61;border-top: .05rem solid #e5e5e5;">
   <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
   <ul>
@@ -406,6 +470,7 @@
     <a href="#">Back to top</a>
   </p> -->
 </footer>
+<!-- Footer -->
 
 
     
