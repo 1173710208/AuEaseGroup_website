@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>AuEase · 安信留学</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+    <link rel="icon" type="image/x-icon" href="./img/title.png" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sidebars.css" rel="stylesheet">
+
+    <style>
+      .scrollBody{height: 160px;position: relative;overflow: hidden;}
+            .scrollBody>ul{list-style: none;position: absolute;height: 40px;width: 100%;top: 160px;left: 0px;}
+            .scrollBody>ul:nth-child(odd){background: #fff;}
+            .scrollBody>ul:nth-child(even) {background: #fff;}
+            .scrollBody>ul>li{height: 40px;width: 50%;float: left;text-align: center;line-height: 40px;}
+            .scrollBody>ul:nth-child(1){top: 0;}
+            .scrollBody>ul:nth-child(2){top: 40px;}
+            .scrollBody>ul:nth-child(3){top: 80px;}
+            .scrollBody>ul:nth-child(4){top: 120px;}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+<!-- Head Container -->
+<div class="container">
+
+  <!-- Header -->
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+        <img src="./img/logo.png" style="width:20vw;">        
+      </div>
+      <div class="col-4 text-center">
+        <!-- <a class="blog-header-logo text-dark" href="#">Large</a> -->
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">办公地址: 508/2 Queen Street, Melbourne</div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">邮件: marketing@auease.com.au</div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">咨询热线: (+61) 426 556 241</div>
+        </div>
+
+        <!-- <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <!-- TabBar -->
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="./index.html">首 页</a>
+      <a class="p-2 " href="./skilled.html" style="font-weight: 900; color: #171c61;">移 民 签 证</a>
+      <a class="p-2 link-secondary" href="#">留 学 签 证</a>
+      <a class="p-2 link-secondary" href="#">其 他 签 证</a>
+      <a class="p-2 link-secondary" href="#">经 典 案 例</a>
+      <a class="p-2 link-secondary" href="#">安 信 澳 洲</a>
+      <a class="p-2 link-secondary" href="#">联 系 我 们</a>
+      <a class="p-2 link-secondary" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+      </a>
+    </nav>
+  </div>  
+  <!-- TabBar -->
+
+</div>
+<!-- Head Container -->
+
+
+
+
+
+<!-- Main Container -->
+<main class="container">
+
+  <!-- 主体介绍框 -->
+  <div class="row g-5">
+
+    <!-- 左侧目录栏 -->
+    <div class="" style="flex: 0 0 auto; width: 25%;">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+                    
+                    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                      <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                      <span class="fs-5 fw-semibold">移民签证</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                          技术移民
+                        </button>
+                        <div class="collapse show" id="home-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a  id="skilled_btn_1" onclick="click_sidebar(this)" href="#" class="link-dark d-inline-flex text-decoration-none rounded">技术移民要求</a></li>
+                            <li><a  id="skilled_btn_2" onclick="click_sidebar(this)" href="#" class="link-dark d-inline-flex text-decoration-none rounded">技术移民类别</a></li>
+                            <li><a  id="skilled_btn_3" onclick="click_sidebar(this)" href="#" class="link-dark d-inline-flex text-decoration-none rounded">技术移民审理时间</a></li>
+                          </ul>
+                        </div>
+                      </li>                      
+                      <li class="border-top my-3"></li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                          雇主担保
+                        </button>
+                        <div class="collapse" id="dashboard-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">雇主担保要求</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">雇主担保类别</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">雇主担保审理时间</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                      <li class="border-top my-3"></li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                          家庭移民
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">父母移民</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">配偶移民</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="border-top my-3"></li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                          投资移民
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">投资移民简介</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">投资移民要求</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">投资移民类别</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">投资移民审理时间</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+    </div>
+    <script>
+        function click_sidebar(obj) {
+			var click_sidebar_id = obj.id;
+            console.log(click_sidebar_id)
+            var skilled_1 = document.getElementById('skilled_1');
+            var skilled_2 = document.getElementById('skilled_2');
+            var skilled_3 = document.getElementById('skilled_3');
+            if (click_sidebar_id=='skilled_btn_3'){
+                console.log('3')
+                skilled_1.hidden=true;
+                skilled_2.hidden=true;
+                skilled_3.hidden=false;
+            }
+            else if(click_sidebar_id=='skilled_btn_2'){
+                console.log('2')
+                skilled_1.hidden=true;
+                skilled_2.hidden=false;
+                skilled_3.hidden=true;
+
+            }
+            else{
+                console.log('1')
+                skilled_1.hidden=false;
+                skilled_2.hidden=true;
+                skilled_3.hidden=true;
+
+            }
+
+        }
+    </script>
+    <!-- 左侧目录栏 -->
+
+
+    <!-- 右侧详情栏 -->
+    <div class="" style="flex: 0 0 auto; width: 75%;">
+
+        <h3 class="mb-1 border-bottom" style="margin-top: 1.5vh; padding-bottom: 2vh; font-weight: 900; font-size: 2.5rem; ">
+            技术移民
+          </h3>
+          
+          <!-- 技术移民要求 -->
+          <article id="skilled_1" class="blog-post">
+            <h2 class=" mb-4" style="font-size: 2rem; margin-bottom: 1rem; font-weight: 800;">技术移民要求</h2>
+            
+            <!-- 简介 -->
+            <p>技术移民的基本要求之一，申请人提名职业必须匹配澳大利亚政府制定的技术职业清单，并且通过规定的职业评估机构，获得相应的职业评估。</p>
+            <p>由澳大利亚政府制定的职业清单被分为：中长期职业清单（针对189签证和亲属担保的491签证）、短期职业清单（适用于州政府担保的190和491签证）、偏远地区职业清单（适用于州政府担保的491签证）。虽然该清单涉及范围广泛，但它并不包括所有可能的职业或专业，只有那些目前在澳大利亚被评估为紧缺等级的职业或专业才会出现在清单中，该清单会依据政府计划而定时调整。</p>
+            <p>近年来，澳大利亚政府对技术移民不断收紧，邀请分数越来越高，并且主要鼓励申请人移民到偏远地区。</p>
+            <p>职业清单查询网址：<a href="https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list">https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list</a></p>
+            <hr>
+            <p style="font-weight: 800;">技术移民打分表格如下：</p>
+            <!-- 简介 -->
+
+            <!-- EOI打分表 -->
+            <table class="table" style="background-color: #b6dbf0;">
+                <thead>
+                  <tr>
+                    <th>打分项</th>
+                    <th>具体评分说明 </th>
+                    <th>EOI得分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="4">年龄</td>
+                    <td>18-24</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>25-32</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>33-39</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>40-44</td>
+                    <td>15</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="3">英语能力</td>
+                    <td>雅思每项6分，OET每项B，PTE每项50，CAE每项169，托福L12 R13 W21 S18
+                    </td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>雅思每项7分，OET每项B，PTE每项65，CAE每项185，托福L24 R24 W27 S23</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>雅思每项8分，OET每项A，PTE每项79，CAE每项200，托福L28 R29 W30 S26</td>
+                    <td>20</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="3">海外相关工作经历</td>
+                    <td>3-4年 （过去10年内）</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>5-7年 （过去10年内）</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>8-10年（过去10年内）</td>
+                    <td>15</td>
+                  </tr>
+                  
+                  <tr>
+                    <td rowspan="4">澳洲相关工作经历</td>
+                    <td>1-2年 （过去10年内）</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>3-4年 （过去10年内）</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>5-7年 （过去10年内）</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>8-10年（过去10年内）</td>
+                    <td>20</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="3">学历</td>
+                    <td>博士学位</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>学士及硕士学位</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td> 所申请职业所在评估机构认可的学历，或者澳洲专科(Diploma), 澳洲职校(AQF Certificate III/IV)</td>
+                    <td>10</td>
+                  </tr>
+
+                  <tr>
+                    <td >澳洲学习经历</td>
+                    <td>需要在澳洲完成至少两年以上的全日制学习</td>
+                    <td>5</td>
+                  </tr>
+
+                  <tr>
+                    <td>偏远地区学习</td>
+                    <td> 在偏远地区学习和居住至少两年</td>
+                    <td>5</td>
+                  </tr>
+
+                  
+                  <tr>
+                    <td> STEM学历</td>
+                    <td> 在澳洲完成两年以上的研究型硕士或者博士课程(Science, Technology, Engineering, Mathematics)</td>
+                    <td>5</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >  职业年</td>
+                    <td> 课程必须和提名职业相关</td>
+                    <td>5</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>  社区语言</td>
+                    <td>CCL考试 或 NAATI认证翻译</td>
+                    <td>5</td>
+                  </tr>
+                  
+                  <tr>
+                    <td > 澳洲学习经历</td>
+                    <td>需要在澳洲完成至少两年以上的全日制学习</td>
+                    <td>5</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="5">单身/配偶加分</td>
+                    <td> 单身</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>配偶未满45岁, 有职业评估, 雅思4个6或等同水平其他语言测试</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>配偶未满45岁, 是澳洲永居或公民</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>配偶未满45岁, 雅思4个6或等同水平其他语言测试</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>配偶不满足以上任何一条</td>
+                    <td>0</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2"> 提名担保分项</td>
+                    <td>  州政府提名担保</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>偏远地区州政府担保或亲属担保（适用于491签证）</td>
+                    <td>15</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            <!-- EOI打分表 -->
+
+            <!-- 标准详细评析： -->            
+            <p style="font-weight: 800;">标准详细评析：</p>
+            <p>1.年龄</p>
+            <ul>
+                <li>年龄的上限是Inclusive的。25-32岁是包含整个32岁期间，换句话说，只要没有满33岁（33岁生日那一天），那么年龄还是可以加到最高分30分；</li>
+                <li>年龄加分是以EOI获邀为准，并非EOI递交时候为准；</li>
+            </ul>
+            <p>2.英语能力分</p>
+            <ul>
+                <li>澳洲移民局官方认可的成绩为IELTS/TOEFL/PTE/CAE/OET，在这五门考试中，申请人最常报考的是PTE,IELTS以及TOEFL,其中PTE由于出分快，机考技巧性强，广受申请人青睐。所以小助手建议一直卡在IELTS或TOEFL单项中的小伙伴，不妨换个思路，尝试报考PTE来获得自己预期的语言加分；</li>
+                <li>目前英语成绩是三年有效，大家要注意整个EOI排队和最终递交申请时，英语成绩必须有效；</li>
+            </ul>
+            <p>3.与提名职业相关的工作经验加分</p>
+            <ul>
+                <li>符合要求的海外工作经验和澳洲工作经验都可以计入加分，并且可以同时加分，但是总分不得超过20分；</li>
+                <li>工作时间要求每周不少于20小时；</li>
+                <li>必须有符合市场标准的薪酬；</li>
+                <li>相关工作经验必须是在10年以内的，超过十年的工作经验则不计入加分项；</li>
+                <li>工作经验加分的时间长度要注意两点：1.需要是Post-qualification，必须是有一个正式学历之后的工作经验才可以计算工作加分；2.需要是Skilled Experience, 很多评估机构认为，刚毕业的工作经验不能计入，需要是满足了职业评估之后所作的工作经验才能计算加分。比如，IT类职业，针对海外学历，ACS在对工作经验评估时会出现在原基础减掉2-5年；</li>
+                <li>工作必须与申请职位相关（ANZSCO6位编号必须前4位相同），例如软件工程261313与软件测试员261314前四位相同，因此他们属于相关职业；主厨351211与厨师351111前四位编号不同，因此他们不属于相关职业；</li>
+            </ul>
+            <p>4.学历</p>
+            <ul>
+                <li>可以是澳洲学历也可以是境外的与澳洲学历对等的学历，中国教育部认可的学历一般都可以视为等同澳洲学历，用于加分；</li>
+                <li></li>
+            </ul>
+            <p>5.澳大利亚两年学习分</p>
+            <ul>
+                <li>在澳洲学习满2个学术年（92周）并且实际就读时间不少于16个月即可获得5分。所学习课程无需与申请职业相关；</li>
+                <li>某些特殊情况下，澳洲移民部可能要求申请人进一步申请VETASSESS学历认证Vocational Education Training and Assessment Services 来进行学历对等的认证;</li>
+            </ul>
+            <p>6.STEM</p>
+            <ul>
+                <li>专门为学霸门准备的一个加分项目，如果你是就读STEM专业的研究型研究生或者博士，还可以再加10分；</li>
+
+            </ul>
+            <p>7.偏远地区学习</p>
+            <ul>
+                <li>在除悉尼、墨尔本、布里斯班以外的地区，满足两年学习要求又可以另外加5分；</li>
+            </ul>
+            <p>8.社区语言</p>
+            <ul>
+                <li>NAATI考试改革后，现在有以下四种途径获得社区语言5分加成：NAATI 社区语言认证考试（CCL）；NAATI笔译员认证考试（Certified Translator, 即三级笔译）；NAATI口译员认证考试（Certified Interpreter, 即三级口译）；NAATI准口译员认证考试（Certified Provisional Interpreter, 即二级口译）；</li>
+
+            </ul>
+            <p>9.职业年</p>
+            <ul>
+                <li>职业年长度为10个月，前7个月每周上课一天，教授澳洲当地找工作的技巧，后三个月为全职实习，工作由职业年机构提供；</li>
+                <li>目前职业年只有IT、工程师以及会计三个方向，完成职业年可以获取额外的5分加成；</li>
+                <li>职业年需要持有毕业生工作签证就读；</li>
+                <li>获得邀请时职业年需要是在四年内就读并完成的；</li>
+            </ul>
+            <p>10.SkillSelect系统发放邀请的顺序</p>
+            <ul>
+                <li>SkillSelect系统通常会根据两个方面决定录用先后:1.EOI分数（分数越高，获邀几率越大也越快）；/li>
+                <li>申请提交的先后顺序（同等分数下，先排队的优先）；</li>
+                <li>EOI可以随时更新，但是每次更新后EOI，将按照更新的时间计算排队的先后顺序；</li>
+            </ul>
+            <p>11.州担保以及偏远地区担保</p>
+            <ul>
+                <li>由于独立技术移民分数要求较高，目前州担保已经成为了一种趋势。州担保不仅仅可以额外加分，大部分职业也就停留在65（包含州政府担保的5/10分加分）分即可获得邀请的局面；</li>
+
+            </ul>
+
+            <!-- 标准详细评析： -->    
+          </article>
+          <!-- 技术移民要求 -->
+
+          <!-- 技术移民类别 -->
+          <article id="skilled_2" class="blog-post"  hidden="true">
+            <h2 class=" mb-4" style="font-size: 2rem; margin-bottom: 1rem; font-weight: 800;">技术移民类别</h2>
+            <p style="font-weight: 800;">1.独立技术移民189类</p>
+            <ul>
+                <li>按照“移民要求”中提供的技术移民打分表打分后，在SkillSelect 系统中排队，高分者获邀；</li>
+                <li>热门职业（如会计、审计，IT类的商业分析师、程序员、网络工程师，工程类的电子工程师、机械工程师、以及其他工程师或工程技术员）按照职业单独排队，也就是说，只用和自己同一个职业的申请人比分数和先后顺序；</li>
+                <li>冷门职业（如护士、教师、律师、医生、建筑设计师、工程造价师、工程类的电气工程师、化学工程师等、IT类的多媒体专员、安全专员等）需要和所有冷门职业一起排队，也就是说，如果有一位分数90的护士申请人，会排在85分的电气工程师之前;</li>
+                <li>目前189分数各个职业不论热门还是冷门，基本都在90分以上</li>
+            </ul>
+            <p style="font-weight: 800;">2.地区及州政府担保190类</p>
+            <ul>
+                <li>获取州或者领地政府的提名；</li>
+                <li>州或领地政府将会有各自的职业需求，如果申请人有自己感兴趣的州或领地，可以了解当地的提名条件，并相应的满足；</li>
+            </ul>
+            <p style="font-weight: 800;">3.临时签证491类</p>
+            <ul>
+                <li>491临时签证为申请人提供了一个获取永久居民签证的途径，并且此类签证将会是澳洲很长一段时间的主要移民方式；</li>
+            </ul>
+           
+          </article>
+          <!-- 技术移民类别 -->          
+
+          <!-- 技术移民审理时间 -->
+          <article id="skilled_3" class="blog-post" hidden="true">
+            <h2 class=" mb-4" style="font-size: 2rem; margin-bottom: 1rem; font-weight: 800;">技术移民审理时间</h2>
+            <p> 技术移民类别的签证审理时间有很大的不同，主要是因为每个案件中的申请人的情况不同和所申请的技术移民签证类别不同，同样也取决于每个不同申请人所提供的申请材料的质量和完整度。由于存在EOI的邀请，移民局直接掌握了获得邀请的分数要求和时间长短，特别是提名职业的不同大大影响到您的申请时间。目前热门职业如会计审计等专业要求很高，通常要95分以上才能收到邀请，其他职业也需要90分才能获得邀请，并且等待时间不一。</p>
+            <p>189签证申请审批时间在2-12个月不等，190签证审批时间在3-11个月不等，491签证审批时间通常在1个月以内。</p>    
+            <p>190或者491州政府担保，还涉及到州政府的审理速度，通常为1-3个月。获得邀请之后，申请人有60天的时间递交签证申请。</p>    
+            <p>由于移民局审批时间经常发生变化，如果想要查询最新的审理时间，可以联系我们的顾问咨询。</p>        
+          </article>
+          <!-- 技术移民审理时间 -->
+
+
+
+
+
+      <!-- 返回顶部 -->
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn  rounded-pill" href="#" style="background-color: #30379c; color: #fff;">回到顶部</a>
+      </nav>
+      <!-- 返回顶部 -->
+
+    </div>
+    <!-- 右侧详情栏 -->
+
+
+
+  </div>
+  <!-- 主体介绍框 -->
+
+</main>
+<!-- Main Container -->
+
+
+
+<!-- Footer -->
+<footer class="" style="padding: 2.5rem 0;color: #fff;text-align: center;background-color: #171c61;border-top: .05rem solid #e5e5e5;">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+  <ul>
+    
+    <img src="./img/tel.png" style="width: 2.5vh;" alt="">
+    <span style="margin-right: 1vw;">(+61) 426 556 241</span>
+  
+    <img src="./img/email.png" style="width: 2.5vh;"  alt="">
+    <span style="margin-right: 1vw;">marketing@auease.com.au</span>
+
+    <img src="./img/cs.png" style="width: 2.5vh;"  alt="">
+    <span">在线咨询</span>
+    <span">工作时间：8:30-19:00</span>
+
+  </ul>
+  <p>Copyright © 2018-2023 安信留学移民 · AuEase Group</p>
+  <!-- <p>
+    <a href="#">Back to top</a>
+  </p> -->
+</footer>
+<!-- Footer -->
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/sidebars.js"></script>
+    
+  </body>
+</html>
