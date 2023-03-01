@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>AuEase · 安信留学</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="icon" type="image/x-icon" href="./img/title.png" />
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .scrollBody{height: 160px;position: relative;overflow: hidden;}
+            .scrollBody>ul{list-style: none;position: absolute;height: 40px;width: 100%;top: 160px;left: 0px;}
+            .scrollBody>ul:nth-child(odd){background: #fff;}
+            .scrollBody>ul:nth-child(even) {background: #fff;}
+            .scrollBody>ul>li{height: 40px;width: 50%;float: left;text-align: center;line-height: 40px;}
+            .scrollBody>ul:nth-child(1){top: 0;}
+            .scrollBody>ul:nth-child(2){top: 40px;}
+            .scrollBody>ul:nth-child(3){top: 80px;}
+            .scrollBody>ul:nth-child(4){top: 120px;}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+<!-- Head Container -->
+<div class="container">
+
+  <!-- Header -->
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+        <img src="./img/logo.png" style="width:20vw;">        
+      </div>
+      <div class="col-4 text-center">
+        <!-- <a class="blog-header-logo text-dark" href="#">Large</a> -->
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">办公地址: 508/2 Queen Street, Melbourne</div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">邮件: marketing@auease.com.au</div>
+          <div style="margin:7px; text-align:right; color: #6c757d;">咨询热线: (+61) 426 556 241</div>
+        </div>
+
+        <!-- <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <!-- TabBar -->
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="./index.html" >首 页</a>
+      <!-- <a class="p-2 link-secondary" href="#">关于我们</a>
+      <a class="p-2 link-secondary" href="#">技术移民</a>
+      <a class="p-2 link-secondary" href="#">雇主担保</a>
+      <a class="p-2 link-secondary" href="#">留学签证</a>
+      <a class="p-2 link-secondary" href="#">投资移民</a>
+      <a class="p-2 link-secondary" href="#">家庭移民</a> -->
+      <a class="p-2 link-secondary" href="./skilled.html">移 民 签 证</a>
+      <a class="p-2 link-secondary" href="./studentvisa.html">留 学 签 证</a>
+      <a class="p-2 link-secondary" href="./elsevisa.html">其 他 签 证</a>
+      <a class="p-2 link-secondary" href="./caselist.html">经 典 案 例</a>
+      <!-- <a class="p-2 link-secondary" href="#">安 信 澳 洲</a> -->
+      <a class="p-2 " href="./contact.html"style="font-weight: 900; color: #171c61;">联 系 我 们</a>
+      <a class="p-2 link-secondary" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+      </a>
+    </nav>
+  </div>  
+  <!-- TabBar -->
+
+</div>
+<!-- Head Container -->
+
+
+
+
+
+
+
+<!-- Main Container -->
+<main class="container">
+
+  <!-- 主框 -->
+  <div class="p-4 p-md-5 mb-4 rounded /*text-bg-dark/" style="background-color: #fff;color: #171c61 !important; border: solid #171c61 0.5vmin; background-image:url('./img/mel.png'); background-size:40%; background-repeat:no-repeat; background-position:right bottom;">
+    <div class="/*col-md-68? px-0" style="flex: 0 0 auto; width: 70%;">
+      <h1 class="/*display-4 fst-italic*/" style="font-family:'Courier New', Courier, monospace; font-size:8.4vmin; font-weight: 900;">安信留学移民</h1>
+      <h1 class="/*display-4 fst-italic*/" style="font-family:'Courier New', Courier, monospace; font-size:8.4vmin; font-weight: 900;">AuEase Group</h1>
+      <p class="lead my-3">澳大利亚墨尔本安信留学移民中介公司为大家提供最专业诚信的留学咨询、签证办理及移民类相关服务。我们将一直秉承最初的信仰，在留学移民的道路上为大家真诚地服务。澳大利亚墨尔本安信留学移民————您身边最值得信赖的墨尔本留学移民中介公司。</p>
+      
+    </div>
+  </div>
+  <!-- 主框 -->
+
+  <!-- 副框 -->
+  <div class="row" style="margin-bottom: 10vh;">
+    <p>xxxx</p>
+    <p>xxx</p>
+    <p>xx</p>
+    <p>x</p>
+  </div>
+  <!-- 副框 -->
+
+</main>
+<!-- Main Container -->
+
+
+
+<!-- Footer -->
+<footer class="" style="padding: 2.5rem 0;color: #fff;text-align: center;background-color: #171c61;border-top: .05rem solid #e5e5e5;">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+  <ul>
+    
+    <img src="./img/tel.png" style="width: 2.5vh;" alt="">
+    <span style="margin-right: 1vw;">(+61) 426 556 241</span>
+  
+    <img src="./img/email.png" style="width: 2.5vh;"  alt="">
+    <span style="margin-right: 1vw;">marketing@auease.com.au</span>
+
+    <img src="./img/cs.png" style="width: 2.5vh;"  alt="">
+    <span">在线咨询</span>
+    <span">工作时间：8:30-19:00</span>
+
+  </ul>
+  <p>Copyright © 2018-2023 安信留学移民 · AuEase Group</p>
+  <!-- <p>
+    <a href="#">Back to top</a>
+  </p> -->
+</footer>
+<!-- Footer -->
+
+
+    
+  </body>
+</html>
